@@ -395,10 +395,7 @@ function detectPlatform(url) {
       if (pathname.includes("/v2/homebrew/")) {
         return {
           key: "homebrew-bottles",
-          name: getPlatformDisplayName(
-            "homebrew-bottles",
-            "https://ghcr.io",
-          ),
+          name: getPlatformDisplayName("homebrew-bottles", "https://ghcr.io"),
           baseUrl: "https://ghcr.io",
         };
       } else {
@@ -453,8 +450,7 @@ function detectPlatform(url) {
     for (const [key, baseUrl] of Object.entries(platformsData)) {
       try {
         const baseUrlObj = new URL(baseUrl);
-        const baseDomain = baseUrlObj.hostname.split(".").slice(-2)
-          .join(".");
+        const baseDomain = baseUrlObj.hostname.split(".").slice(-2).join(".");
         const urlDomain = hostname.split(".").slice(-2).join(".");
 
         if (baseDomain === urlDomain && baseDomain.includes(".")) {
