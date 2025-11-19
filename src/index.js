@@ -323,7 +323,7 @@ class BlogApp {
                 <p class="article-excerpt text-gray-600 mb-4 line-clamp-3">正在加载摘要...</p>
                 <div class="flex items-center justify-between">
                     <div class="flex items-center space-x-2">
-                        <img src="https://picsum.photos/seed/avatar/32/32.jpg"
+                        <img src="/images/avatar-32.jpg"
                              alt="${article.author}"
                              class="w-8 h-8 rounded-full">
                         <span class="text-sm text-gray-600">${article.author}</span>

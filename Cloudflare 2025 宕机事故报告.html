@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="深入分析2025年11月18日Cloudflare全球性服务中断事件的技术根因、影响范围与应对策略。研究级联故障链、控制平面配置漂移风险及网络基础设施弹性架构设计，为企业级系统可靠性提供实践指南。">
     <title>2025年11月18日 Cloudflare 宕机事故深度剖析 | Cloudflare Blog</title>
      <link rel="stylesheet" href="./src/style.css" />  <link rel="icon" href="vite.svg" />
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -298,7 +299,7 @@
                 </p>
                 <!-- Architecture Image -->
                 <figure>
-                    <img src="https://blog.cloudflare.com/content/images/2022/09/image5-3.png" alt="Cloudflare 核心代理系统架构图" class="blog-image">
+                    <img src="/images/cloudflare-proxy-architecture.png" alt="Cloudflare 核心代理系统架构图" class="blog-image">
                     <figcaption class="caption">图 3：Cloudflare 核心代理系统（FL/Pingora）架构与 Bot Management 集成示意</figcaption>
                 </figure>
                 <p>
@@ -366,7 +367,7 @@
                 </p>
                 <!-- ClickHouse Image -->
                 <figure>
-                    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="ClickHouse 数据库集群架构示意图" class="blog-image">
+                    <img src="/images/clickhouse-cluster.jpg" alt="ClickHouse 数据库集群架构示意图" class="blog-image">
                     <figcaption class="caption">图 4：Cloudflare 内部用于日志分析的 ClickHouse 集群基础设施 (示意图)</figcaption>
                 </figure>
                 <p>
@@ -425,7 +426,7 @@
                 <h3 class="report-subsection-title">6.3 边缘资源的隔离性分析</h3>
                 <!-- Bot Management Image -->
                 <figure>
-                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Bot Management 工作流程示意图" class="blog-image">
+                    <img src="/images/bot-management-workflow.jpg" alt="Bot Management 工作流程示意图" class="blog-image">
                     <figcaption class="caption">图 5：Bot Management 模块代码逻辑示意。其资源消耗需被严格隔离。</figcaption>
                 </figure>
                 <p>

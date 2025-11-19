@@ -205,7 +205,8 @@ async function loadPlatforms() {
     // const fileContent = await response.text();
 
     // Parse the platform data from the JavaScript file
-    const module=await import('https://cdn.jsdelivr.net/gh/masx200/Xget@main/src/config/platforms.js')
+    // Use local platforms.js file
+    const module = await import('./platform.js');
     platformsData = parsePlatformsData(module);
 
     if (Object.keys(platformsData).length === 0) {
@@ -217,6 +218,24 @@ async function loadPlatforms() {
     console.error("加载平台失败:", error);
     showError(`加载平台配置失败: ${error.message}`);
   }
+}
+
+/**
+ * Load platform configuration from local fallback
+ * @async
+ * @function loadLocalPlatforms
+ * @returns {Promise<Object>} Local platform data
+ */
+async function loadLocalPlatforms() {
+  // Provide fallback platform data for common services
+  return {
+    "gh": "https://github.com",
+    "npm": "https://npmjs.com",
+    "pypi": "https://pypi.org",
+    "crates": "https://crates.io",
+    "maven": "https://repo1.maven.org/maven2",
+    "nuget": "https://www.nuget.org"
+  };
 }
 
 /**
