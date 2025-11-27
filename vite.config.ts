@@ -147,7 +147,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      "lucide": "virtual:https://unpkg.com/lucide@0.554.0/dist/esm/lucide.js",
+      "lucide": "virtual:https://cdn.jsdelivr.net/npm/lucide@0.554.0/dist/esm/lucide.js/+esm",
       "chart.js/auto": "virtual:https://esm.sh/chart.js/auto/auto.js",
 
       "https://cdn.jsdelivr.net/gh/masx200/Xget@main/src/config/platforms.js":
