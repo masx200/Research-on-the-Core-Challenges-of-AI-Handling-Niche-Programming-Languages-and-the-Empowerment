@@ -8,7 +8,7 @@
   <title>AI处理小众编程语言的核心挑战与外部知识库赋能机制研究</title>
   <link rel="icon" href="vite.svg" />
   <link rel="stylesheet" href="./src/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -669,7 +669,10 @@
     </div>
   </div>
 </body>
-<script>
+<script type="module">
+
+
+  import Chart from "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/auto/auto.js/+esm";
   // 编程语言数据分布图表
   const ctx = document.getElementById("languageDistributionChart")
     .getContext("2d");

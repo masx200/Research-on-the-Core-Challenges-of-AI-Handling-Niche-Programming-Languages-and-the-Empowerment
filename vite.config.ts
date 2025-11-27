@@ -147,6 +147,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
+      "https://cdn.jsdelivr.net/npm/chart.js@4.5.1/auto/auto.js/+esm":"virtual:https://cdn.jsdelivr.net/npm/chart.js@4.5.1/auto/auto.js/+esm",
       "lucide": "virtual:https://cdn.jsdelivr.net/npm/lucide@0.554.0/dist/esm/lucide.js/+esm",
       "chart.js/auto": "virtual:https://esm.sh/chart.js/auto/auto.js",
 
