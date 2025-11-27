@@ -206,7 +206,7 @@ async function loadPlatforms() {
 
     // Parse the platform data from the JavaScript file
     // Use local platforms.js file
-    const module = await import('./platform.js');
+    const module = await import("./platform.js");
     platformsData = parsePlatformsData(module);
 
     if (Object.keys(platformsData).length === 0) {
@@ -234,7 +234,7 @@ async function loadLocalPlatforms() {
     "pypi": "https://pypi.org",
     "crates": "https://crates.io",
     "maven": "https://repo1.maven.org/maven2",
-    "nuget": "https://www.nuget.org"
+    "nuget": "https://www.nuget.org",
   };
 }
 
@@ -249,7 +249,7 @@ function parsePlatformsData(module) {
   if (!module || !module.PLATFORMS) {
     throw new Error("无法在模块中找到 PLATFORMS 对象");
   }
-  return JSON.parse(JSON.stringify( module.PLATFORMS));
+  return JSON.parse(JSON.stringify(module.PLATFORMS));
   // try {
   //   // First, try to find the PLATFORMS export
   //   const platformsMatch = fileContent.match(
