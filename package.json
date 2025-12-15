@@ -21,7 +21,7 @@
     "@masx200/vite-plugin-virtual-http-resolve": "^1.0.1",
     "@tailwindcss/postcss": "^4.1.17",
     "@types/node": "^24.10.1",
-    "autoprefixer": "^10.4.22",
+    "autoprefixer": "^10.4.23",
     "axios": "^1.13.2",
     "chart.js": "^4.5.1",
     "lucide": "^0.559.0",
