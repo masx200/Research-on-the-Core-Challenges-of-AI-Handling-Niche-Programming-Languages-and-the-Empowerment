@@ -1,4 +1,5 @@
 {
+  "pages_build_output_dir": "dist",
   "compatibility_date": "2025-11-27",
   "name": "research-on-the-core-challenges-of-ai-handling-niche",
   "observability": {
